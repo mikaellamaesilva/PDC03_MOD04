@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC03_MOD04.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#285dbb" Padding="50" CornerRadius="0">
+            <Label Text="Module 04 - List and Navigations" HorizontalTextAlignment="Center" TextColor="#ebf1fb" FontSize="36"/>
+        </Frame>
+
+        <StackLayout Padding="20">
+            <Button Text="Activity 1 - Listview" Clicked="Activity1"
+                    Padding="15"
+                    Margin="0,10,0,0"
+                    CornerRadius="10"
+                    BackgroundColor="#ebf1fb"
+                    TextColor="#285dbb"/>
+
+            <Button Text="Activity 2 - Listview with Itemsource" Clicked="Activity2"
+                    Padding="15"
+                    Margin="0,10,0,0"
+                    CornerRadius="10"
+                    BackgroundColor="#ebf1fb"
+                    TextColor="#285dbb"/>
+            
+            <Button Text="Activity 3 - CollectionView with Itemsource" Clicked="Activity3"
+                    Padding="15"
+                    Margin="0,10,0,0"
+                    CornerRadius="10"
+                    BackgroundColor="#ebf1fb"
+                    TextColor="#285dbb"/>
+        </StackLayout>
+        
+    </StackLayout>
+
+</ContentPage>

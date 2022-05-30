@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC03_MOD04.activity2" Title="Animal Quiz">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Animal Quiz"
+                  FontAttributes="Bold"
+                   TextColor="#1d4695"
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                  FontSize="Large"
+                   />
+
+            <Label Text="Using ListView with ItemsSource" 
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                   FontSize="15"/>
+            
+            <StackLayout Padding="20">
+                <Label Text="Which of the following is an example of a horse?"
+                       FontSize="18"
+                       TextColor="Black"
+                       Padding="0,0,0,20"/>
+                <ListView x:Name="ItemView"
+                      ItemsSource="{Binding Item}"
+                     >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell ImageSource="{Binding Image}" Text="{Binding Name}" TextColor="Black" Detail="{Binding ImageCredit}" DetailColor="Gray" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC03_MOD04.activity1" Title="Mathematics Quiz">
+    <ContentPage.Content>
+        <StackLayout Padding="20"
+                     VerticalOptions="Start">
+            <Label Text="Mathematics Quiz"
+                  FontAttributes="Bold"
+                   TextColor="#1d4695"
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                  FontSize="Large"
+                   />
+            <Label Text="Using ListView" 
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                   FontSize="15"/>
+
+            <StackLayout Padding="10">
+                <Label Text="1. What is 3 x 2?"
+                       FontSize="18"
+                       TextColor="Black"/>
+                <ListView>
+                    <ListView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>a. 6</x:String>
+                            <x:String>b. 8</x:String>
+                            <x:String>c. 5</x:String>
+                        </x:Array>
+                    </ListView.ItemsSource>
+                </ListView>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="2. What is 4 + 3 ?"
+                       FontSize="18"
+                       TextColor="Black"/>
+                <ListView>
+                    <ListView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>a. 1</x:String>
+                            <x:String>b. 12</x:String>
+                            <x:String>c. 7</x:String>
+                        </x:Array>
+                    </ListView.ItemsSource>
+                </ListView>
+            </StackLayout>
+
+            <StackLayout Padding="10">
+                <Label Text="3. What is 7 - 3 ?"
+                       FontSize="18"
+                       TextColor="Black"/>
+                <ListView>
+                    <ListView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>a. 10</x:String>
+                            <x:String>b. 4</x:String>
+                            <x:String>c. 7</x:String>
+                        </x:Array>
+                    </ListView.ItemsSource>
+                </ListView>
+            </StackLayout>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
